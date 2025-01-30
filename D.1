@@ -1,0 +1,26 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Operador ternário: Verifique se uma string está vazia.
+         
+         Console.WriteLine("Digite uma palavra/string:");
+         string palavra = (Console.ReadLine());
+         
+         int verificacao = palavra.Length;
+         
+		 string resultado = verificacao == 0  ? "Essa string está vazia" : "Essa não string está vazia";
+         Console.WriteLine(resultado);
+		 	
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
