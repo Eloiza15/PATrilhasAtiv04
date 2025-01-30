@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	   //Crie um programa que solicite ao usuário o seu nome e verifique se ele é
+       //igual a "Wilson" OU "Gloria". Se o nome for igual a "Wilson" OU "Gloria",
+       //o programa deve imprimir a mensagem "Olá, bem-vindo(a) de volta!".
+     
+		 Console.WriteLine ("Qual é seu nome?");
+		 string nome = (Console.ReadLine().ToLower());
+		 
+		 if (nome == "gloria" || nome == "wilson") 
+		 {
+		 	Console.WriteLine("Olá, bem-vindo(a) de volta!");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Você não é a pessoa permitida!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
