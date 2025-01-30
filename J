@@ -1,0 +1,33 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	   //Escreva um programa que solicite ao usuário um número inteiro e verifique
+       //se ele é maior do que 10 OU menor do que 0. Se o número for maior do que
+       //10 OU menor do que 0, o programa deve imprimir a mensagem "Número
+       //inválido!".
+     
+		 Console.WriteLine ("Escreva um número inteiro:");
+		 int num = int.Parse(Console.ReadLine());
+		 
+		 if (num > 10 || num < 0) 
+		 {
+		 	Console.WriteLine("Número inválido!");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Número válido!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
