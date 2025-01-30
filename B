@@ -1,0 +1,35 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Escreva um programa que pergunte ao usuário se ele deseja comprar um
+        //carro novo e se tem dinheiro suficiente para isso. Se o usuário quiser
+        //comprar um carro novo e tiver dinheiro suficiente, o programa deve
+        //imprimir "Parabéns, você pode comprar um carro novo!".
+		  
+		 Console.WriteLine ("Você deseja comprar um carro novo (sim ou não)?");
+		 string respostaUm = (Console.ReadLine().ToLower());
+		 
+		 Console.WriteLine ("Você tem dinheiro suficiente para isso (sim ou não)?");
+		 string respostaDois = (Console.ReadLine().ToLower());
+		 
+		 if (respostaUm == "sim" && respostaDois == "sim") 
+		 {
+		 	Console.WriteLine("Parabéns, você pode comprar um carro novo!");
+		 }
+		 else {
+		 	Console.WriteLine("Entendo, que pena!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
