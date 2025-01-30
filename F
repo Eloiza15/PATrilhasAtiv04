@@ -1,0 +1,35 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	 //Escreva um programa que pergunte ao usuário se ele deseja adicionar açúcar
+    //ou leite ao seu café. Se o usuário responder que deseja adicionar açúcar OU
+    //leite, o programa deve imprimir a mensagem "Café com adicional
+    //preparado!".
+     
+		 Console.WriteLine ("Você deseja adicionar açúcar no seu café? (sim ou não)");
+		 string acucar = (Console.ReadLine().ToLower());
+		 
+		 Console.WriteLine ("Você deseja adicionar leite no seu café? (sim ou não)");
+		 string leite = (Console.ReadLine().ToLower());
+		 
+		 if (acucar == "sim" || leite == "sim") 
+		 {
+		 	Console.WriteLine("Café com adicional preparado!");
+		 }
+		 else {
+		 	Console.WriteLine("Entendido!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
