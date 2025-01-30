@@ -1,0 +1,36 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	 //Crie um programa que solicite ao usuário um número inteiro e verifique se
+     //ele é divisível por 3 OU por 5. Se o número for divisível por 3 OU por 5, o
+     //programa deve imprimir a mensagem "O número é divisível por 3 ou por
+     //5!".
+     
+		 Console.WriteLine ("Escreva um número inteiro:");
+		 int num = int.Parse(Console.ReadLine());
+		 
+		 int divisivelTres = num%3;
+		 int divisivelCinco = num%5;
+		 
+		 if (divisivelTres == 0 || divisivelCinco == 0) 
+		 {
+		 	Console.WriteLine("O número é divisível por 3 ou por 5!");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("O número não é divisível por 3 ou por 5!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
