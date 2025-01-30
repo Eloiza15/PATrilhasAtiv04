@@ -1,0 +1,22 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        //Operador ternário: Verifique se uma condição é verdadeira.
+        
+        Console.WriteLine("Digite 'true' ou 'false':");
+        string resposta = Console.ReadLine().ToLower();
+
+        bool condicao = bool.Parse(resposta);
+
+        string resultado = condicao ? "A condição é verdadeira" : "A condição é falsa";
+
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
