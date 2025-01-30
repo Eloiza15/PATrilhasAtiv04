@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	   //Crie um programa que peça ao usuário para digitar um número e verifique se
+       //ele não é igual a zero. Se a condição for verdadeira, o programa deve
+       //imprimir "O número é diferente de zero".
+     
+		 Console.WriteLine ("Digite um número:");
+		 double num = double.Parse(Console.ReadLine());
+		 
+		 if (num != 0) 
+		 {
+		 	Console.WriteLine("O número é diferente de zero");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Esse número é = 0");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
