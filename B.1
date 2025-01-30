@@ -1,0 +1,27 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Operador ternário: Encontre o maior entre dois números.
+         
+		 Console.WriteLine ("Digite primeiro número (vamos verificar o maior entre dois números):");
+		 double numUm = double.Parse(Console.ReadLine());
+		 
+		 Console.WriteLine ("Digite segundo número:");
+		 double numDois = double.Parse(Console.ReadLine());
+		 
+		 string resultado = numUm > numDois ? "O número " + numUm + " é maior" : "O número " + numDois + " é maior";
+         Console.WriteLine(resultado);
+		 	
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
