@@ -1,0 +1,34 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+//Crie um programa que peça ao usuário para digitar uma palavra e verifique
+//se ela não é vazia. Se a condição for verdadeira, o programa deve imprimir
+//"A palavra não é vazia".
+	
+		 Console.WriteLine ("Digite uma palavra:");
+		 string palavra = (Console.ReadLine());
+		  
+		 int verificacao = palavra.Length;
+		 	
+		 if (verificacao != 0) 
+		 {
+		 	Console.WriteLine("A palavra não é vazia");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("A palavra é vazia");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
