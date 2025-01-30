@@ -1,0 +1,34 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Escreva um programa que pergunte ao usuário sua idade e se tem carteira de
+        //motorista. Se o usuário tiver mais de 18 anos e possuir carteira de motorista,
+        //o programa deve imprimi "Você pode dirigir".
+		  
+		 Console.WriteLine ("Qual é sua idade?");
+		 int idade = int.Parse(Console.ReadLine());
+		 
+		 Console.WriteLine ("Você tem carteira de motorista (sim ou não)?");
+		 string carteira = (Console.ReadLine().ToLower());
+		 
+		 if (idade >= 18 && carteira == "sim") 
+		 {
+		 	Console.WriteLine("Você pode dirigir");
+		 }
+		 else {
+		 	Console.WriteLine("Você não pode dirigir");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
