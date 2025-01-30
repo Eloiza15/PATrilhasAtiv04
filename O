@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+//Escreva um programa que pergunte ao usuário se ele não deseja cancelar
+//uma operação. Se a resposta for negativa, o programa deve imprimir "Por
+//favor, confirme o cancelamento da operação".
+	
+		 Console.WriteLine ("Deseja cancelar uma operação? (sim ou não)");
+		 string resposta = (Console.ReadLine().ToLower());
+		 	
+		 if (resposta != "não") 
+		 {
+		 	Console.WriteLine("Por favor, confirme o cancelamento da operação");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("A operação não será cancelada");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
