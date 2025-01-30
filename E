@@ -1,0 +1,38 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	 //Escreva um programa que solicite ao usuário o seu nome e idade. O
+     //programa deve verificar se o nome possui mais de 3 caracteres e se a idade é
+     //maior ou igual a 18 anos. Se ambas as condições forem verdadeiras, o
+     //programa deve imprimir "Acesso permitido". Caso contrário, deve imprimir
+     //"Acesso negado".
+     
+		 Console.WriteLine ("Qual é seu nome?");
+		 string nome = (Console.ReadLine());
+		 
+		 Console.WriteLine ("Qual sua idade? (em números)");
+		 int idade = int.Parse(Console.ReadLine());
+		 
+		 int tamanho = nome.Length;
+		 
+		 if (tamanho > 3 && idade >= 18) 
+		 {
+		 	Console.WriteLine("Acesso permitido");
+		 }
+		 else {
+		 	Console.WriteLine("Acesso negado");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
