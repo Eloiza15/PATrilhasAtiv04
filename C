@@ -1,0 +1,35 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Escreva um programa que pergunte ao usuário se ele possui um diploma de
+        //ensino superior e se tem mais de 21 anos. Se o usuário possuir um diploma
+        //de ensino superior e tiver mais de 21 anos, o programa deve imprimir
+        //"Parabéns, você está qualificado para a vaga!"
+		  
+		 Console.WriteLine ("Você possui um diploma de ensino superior (sim ou não)?");
+		 string resposta = (Console.ReadLine().ToLower());
+		 
+		 Console.WriteLine ("Qual sua idade (em números somente)?");
+		 int idade = int.Parse(Console.ReadLine().ToLower());
+		 
+		 if (resposta == "sim" && idade >= 21) 
+		 {
+		 	Console.WriteLine("Parabéns, você está qualificado para a vaga!");
+		 }
+		 else {
+		 	Console.WriteLine("Infelizmente você não está qualificado para a vaga");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
