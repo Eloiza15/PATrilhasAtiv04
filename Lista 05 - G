@@ -1,0 +1,20 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        Console.WriteLine("Digite um número para verificarmos se ele é positivo, negativo ou zero:");
+        double numero = double.Parse(Console.ReadLine());
+
+        string resultado = numero < 0 ? "Esse número é NEGATIVO" :
+                          numero == 0 ? "Esse número é ZERO" : 
+                          "Esse número é POSITIVO";
+        
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
