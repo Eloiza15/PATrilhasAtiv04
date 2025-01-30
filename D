@@ -1,0 +1,35 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Escreva um programa que pergunte ao usuário se ele é assinante de um
+        //serviço de streaming e se já assistiu a uma série específica. Se o usuário for
+        //assinante e já tiver assistido à série, o programa deve imprimir "Ótimo, agora
+        //você pode assistir à nova temporada!".
+		  
+		 Console.WriteLine ("Você é assinante do serviço de streaming HBO (sim ou não)?");
+		 string respostaUm = (Console.ReadLine().ToLower());
+		 
+		 Console.WriteLine ("Você já assistiu a série 'O verão que mudou minha vida' (sim ou não)?");
+		 string respostaDois = (Console.ReadLine().ToLower());
+		 
+		 if (respostaUm == "sim" && respostaDois == "sim") 
+		 {
+		 	Console.WriteLine("Ótimo, agora você pode assistir à nova temporada!");
+		 }
+		 else {
+		 	Console.WriteLine("Que pena!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
