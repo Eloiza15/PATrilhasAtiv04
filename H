@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	   //Escreva um programa que pergunte ao usuário se ele deseja comprar um
+       //produto. Se o usuário responder "sim" OU "s", o programa deve imprimir a
+       //mensagem "Obrigado pela compra!"
+     
+		 Console.WriteLine ("Você deseja comprar um produto?");
+		 string resposta = (Console.ReadLine().ToLower());
+		 
+		 if (resposta == "sim" || resposta == "s") 
+		 {
+		 	Console.WriteLine("Obrigada pela compra!");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Que pena!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
