@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+	   //Escreva um programa que pergunte ao usuário se ele não é um robô. Se a
+       //resposta for negativa, o programa deve imprimir "Por favor, prove que você
+       //não é um robô"
+     
+		 Console.WriteLine ("Você é um robô? (sim ou não)");
+		 string resposta = (Console.ReadLine().ToLower());
+		 
+		 if (resposta != "sim") 
+		 {
+		 	Console.WriteLine("Por favor, prove que você não é um robô");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Entendido!");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
