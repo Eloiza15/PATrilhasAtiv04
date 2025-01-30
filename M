@@ -1,0 +1,33 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+//Escreva um programa que pergunte ao usuário se ele não é um membro
+//inativo de um clube. Se a resposta for negativa, o programa deve imprimir
+//"Por favor, atualize sua inscrição para continuar usufruindo dos benefícios
+//do clube".
+     
+		 Console.WriteLine ("Você é um membro inativo do clube? (sim ou não)");
+		 string resposta = (Console.ReadLine().ToLower());
+		 
+		 if (resposta != "não") 
+		 {
+		 	Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube");
+		 }
+		 else {
+		 	
+		 	Console.WriteLine("Você não precisa atualizar sua inscrição");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
