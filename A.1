@@ -1,0 +1,24 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+         //Operador ternário: Verifique se um número é par ou ímpar.
+         
+		 Console.WriteLine ("Digite um número inteiro (vamos verificar se é par ou ímpar):");
+		 int num = int.Parse(Console.ReadLine());
+		 
+		 string resultado = num%2 == 0 ? "PAR" : "ÍMPAR";
+         Console.WriteLine(resultado);
+		 	
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
