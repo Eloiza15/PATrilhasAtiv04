@@ -4,6 +4,9 @@ public class Exercicios
 {
     public static void Main()
     {
+    
+        //Operador ternário: Verifique se um número é positivo, negativo ou zero.
+
         Console.WriteLine("Digite um número para verificarmos se ele é positivo, negativo ou zero:");
         double numero = double.Parse(Console.ReadLine());
 
