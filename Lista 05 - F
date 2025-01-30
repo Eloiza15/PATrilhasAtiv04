@@ -1,0 +1,20 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+    	//Operador ternário: Calcule o valor absoluto de um número.
+    	
+        Console.WriteLine("Digite um número para calcularmos seu valor absoluto:");
+        double numero = double.Parse(Console.ReadLine());
+
+        string resultado = Math.Abs(numero) >= 0 ? "O valor absoluto de " + numero + " é " + Math.Abs(numero) : "";
+
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
