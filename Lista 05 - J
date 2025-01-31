@@ -1,0 +1,22 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        // Operador ternário: Verifique se uma variável é nula ou não.
+        
+        Console.WriteLine("Preencha a variável com alguma informação:");
+        string variavel = Console.ReadLine();
+        
+        string resultado = !string.IsNullOrEmpty(variavel) 
+            ? "Essa é a informação que digitou: " + variavel
+            : "Essa variável está nula ou vazia";
+
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
