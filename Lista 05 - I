@@ -1,0 +1,25 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        // Operador ternário: Verifique se um número é divisível por outro.
+        
+        Console.WriteLine("Digite o dividendo:");
+        double dividendo = double.Parse(Console.ReadLine());
+        
+        Console.WriteLine("Digite o divisor:");
+        double divisor = double.Parse(Console.ReadLine());
+
+        string resultado = dividendo%divisor == 0
+            ? "O número " + dividendo + " é divisível por " + divisor
+            : "O número " + dividendo + " não é divisível por " + divisor;
+
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
