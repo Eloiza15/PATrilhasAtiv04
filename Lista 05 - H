@@ -1,0 +1,24 @@
+using System;
+
+public class Exercicios
+{
+    public static void Main()
+    {
+        // Operador ternário: Converta uma string em um número.
+        
+        Console.WriteLine("Digite um número inteiro:");
+        string entrada = Console.ReadLine();
+
+        int numeroConvertido;
+
+        string resultado = int.TryParse(entrada, out numeroConvertido) 
+            ? "Número convertido com sucesso: " + numeroConvertido 
+            : "Erro: a entrada não é um número inteiro";
+
+        Console.WriteLine(resultado);
+
+        Console.WriteLine("");
+        Console.Write("Pressione qualquer tecla para fechar...");
+        Console.ReadKey(true);
+    }
+}
